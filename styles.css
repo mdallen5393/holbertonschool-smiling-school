@@ -1,0 +1,64 @@
+@import url("./images/holberton_school-icon/style.css");
+
+/* #region ROOT */
+:root {
+    --color-purple: #C271FF;
+    --color-black: #071629;
+}
+
+/* #endregion */
+
+/* #region BODY */
+
+/* #endregion */
+
+/* #region HEADER */
+header {
+    background-color: var(--color-black);
+    background-image: url("./images/images/pic_1.jpg");
+    /* background-size: cover; */ /* TODO: should be cover per gif? */
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+@media (max-width: 767px) {
+    header {
+        background-size: 62em;
+    }
+}
+
+h1 {
+    font-size: 56px; /* should be 61? */
+}
+
+.purple-text {
+    color: var(--color-purple);
+}
+
+.btn, .btn:hover, .btn:focus {
+    opacity: 0.9;
+    background-color: var(--color-purple);
+    border-color: var(--color-purple);
+    font-size: 14px;
+}
+
+.navbar-toggler {
+    border: none;
+    float: left;
+    position: absolute;
+    top: 38px;
+}
+
+.space-lg {
+    height: 150px;
+}
+
+/* #endregion */
+
+/* #region  */
+
+/* #endregion */
+
+/* #region  */
+
+/* #endregion */
