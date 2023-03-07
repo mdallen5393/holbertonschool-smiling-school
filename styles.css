@@ -232,3 +232,7 @@ h1 {
     }
 }
 /* #endregion */
+
+.membership {
+    background-color: var(--color-black);
+}
