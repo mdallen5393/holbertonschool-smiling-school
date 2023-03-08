@@ -260,3 +260,7 @@ h1 {
 .membership {
     background-color: var(--color-black);
 }
+
+footer {
+    background-color: var(--color-black);
+}
