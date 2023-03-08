@@ -106,6 +106,7 @@ h1 {
 */
 @media (min-width: 768px) and (max-width: 991px) {
     /* Show 4th slide on md if col-md-4*/
+    #latest .carousel-inner .active.col-md-4.carousel-item + .carousel-item + .carousel-item + .carousel-item,
     #popular .carousel-inner .active.col-md-4.carousel-item + .carousel-item + .carousel-item + .carousel-item {
         position: absolute;
         top: 0;
@@ -117,6 +118,7 @@ h1 {
 }
 @media (min-width: 576px) and (max-width: 768px) {
     /* Show 3rd slide on sm if col-sm-6*/
+    #latest .carousel-inner .active.col-sm-6.carousel-item + .carousel-item + .carousel-item,
     #popular .carousel-inner .active.col-sm-6.carousel-item + .carousel-item + .carousel-item {
         position: absolute;
         top: 0;
@@ -127,22 +129,30 @@ h1 {
     }
 }
 @media (min-width: 576px) {
+    #latest .carousel-item,
     #popular .carousel-item {
         margin-right: 0;
     }
     /* show 2 items */
+    #latest .carousel-inner .active + .carousel-item,
     #popular .carousel-inner .active + .carousel-item {
         display: block;
     }
+    #latest .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    #latest .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
     #popular .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
     #popular .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item {
         transition: none;
     }
+    #latest .carousel-inner .carousel-item-next,
     #popular .carousel-inner .carousel-item-next {
         position: relative;
         transform: translate3d(0, 0, 0);
     }
     /* left or forward direction */
+    #latest .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+    #latest .carousel-item-next.carousel-item-left + .carousel-item,
+    #latest .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
     #popular .active.carousel-item-left + .carousel-item-next.carousel-item-left,
     #popular .carousel-item-next.carousel-item-left + .carousel-item,
     #popular .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item {
@@ -151,6 +161,7 @@ h1 {
         visibility: visible;
     }
     /* farthest right hidden item must be also positioned for animations */
+    #latest .carousel-inner .carousel-item-prev.carousel-item-right,
     #popular .carousel-inner .carousel-item-prev.carousel-item-right {
         position: absolute;
         top: 0;
@@ -160,6 +171,9 @@ h1 {
         visibility: visible;
     }
     /* right or prev direction */
+    #latest .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+    #latest .carousel-item-prev.carousel-item-right + .carousel-item,
+    #latest .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
     #popular .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
     #popular .carousel-item-prev.carousel-item-right + .carousel-item,
     #popular .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item {
@@ -173,23 +187,28 @@ h1 {
 /* MD */
 @media (min-width: 768px) {
     /* show 3rd of 3 item slide */
+    #latest .carousel-inner .active + .carousel-item + .carousel-item,
     #popular .carousel-inner .active + .carousel-item + .carousel-item {
         display: block;
     }
+    #latest .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item,
     #popular .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
         transition: none;
     }
+    #latest .carousel-inner .carousel-item-next,
     #popular .carousel-inner .carousel-item-next {
         position: relative;
         transform: translate3d(0, 0, 0);
     }
     /* left or forward direction */
+    #latest .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item,
     #popular .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
         position: relative;
         transform: translate3d(-100%, 0, 0);
         visibility: visible;
     }
     /* right or prev direction */
+    #latest .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item,
     #popular .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
         position: relative;
         transform: translate3d(100%, 0, 0);
@@ -201,13 +220,16 @@ h1 {
 /* LG */
 @media (min-width: 991px) {
     /* show 4th item */
+    #latest .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item,
     #popular .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item {
         display: block;
     }
+    #latest .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item,
     #popular .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
         transition: none;
     }
     /* Show 5th slide on lg if col-lg-3 */
+    #latest .carousel-inner .active.col-lg-3.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item,
     #popular .carousel-inner .active.col-lg-3.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
         position: absolute;
         top: 0;
@@ -217,12 +239,14 @@ h1 {
         visibility: visible;
     }
     /* left or forward direction */
+    #latest .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item,
     #popular .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
         position: relative;
         transform: translate3d(-100%, 0, 0);
         visibility: visible;
     }
     /* right or prev direction //t - previous slide direction last item animation fix */
+    #latest .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item,
     #popular .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
         position: relative;
         transform: translate3d(100%, 0, 0);
