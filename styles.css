@@ -15,10 +15,20 @@
 /* #region HEADER */
 header {
     background-color: var(--color-black);
-    background-image: url("./images/images/pic_1.jpg");
-    /* background-size: cover; */ /* TODO: should be cover per gif? */
-    background-repeat: no-repeat;
     background-position: center top;
+    background-repeat: no-repeat;
+}
+
+#homepage {
+    background-image: url("./images/images/pic_1.jpg");
+}
+
+#pricing {
+    background-image: url("./images/images/pic_2.jpg");
+}
+
+#courses {
+    background-image: url("./images/images/pic_3.jpg");
 }
 
 .profile-sm {
